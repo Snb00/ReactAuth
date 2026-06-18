@@ -1,10 +1,8 @@
-const N8N_BASE = "https://snb00.app.n8n.cloud/webhook";
-
-const LOGIN_URL = import.meta.env.VITE_N8N_LOGIN_URL || `${N8N_BASE}/auth/login`;
-const REGISTER_URL = import.meta.env.VITE_N8N_REGISTER_URL || `${N8N_BASE}/auth/register`;
-const DEVICES_URL = import.meta.env.VITE_N8N_DEVICES_URL || `${N8N_BASE}/auth/devices`;
-const REVOKE_URL = import.meta.env.VITE_N8N_REVOKE_URL || `${N8N_BASE}/auth/revoke`;
-const OAUTH_URL = import.meta.env.VITE_N8N_OAUTH_URL || `${N8N_BASE}/auth/oauth`;
+const LOGIN_URL = import.meta.env.VITE_N8N_LOGIN_URL || "/webhook/auth/login";
+const REGISTER_URL = import.meta.env.VITE_N8N_REGISTER_URL || "/webhook/auth/register";
+const DEVICES_URL = import.meta.env.VITE_N8N_DEVICES_URL || "/webhook/auth/devices";
+const REVOKE_URL = import.meta.env.VITE_N8N_REVOKE_URL || "/webhook/auth/revoke";
+const OAUTH_URL = import.meta.env.VITE_N8N_OAUTH_URL || "/webhook/auth/oauth";
 
 const TOKEN_KEY = "unite_jwt";
 
